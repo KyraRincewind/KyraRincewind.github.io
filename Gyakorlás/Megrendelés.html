@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <title>Megrendelés</title>
+</head>
+
+<body>
+    <h1>Megrendelő űrlap</h1>
+    <div class="container">
+        <div class="col-3"></div>
+        <div class="col-6">
+            <form action="">
+                <h3>Megrendelő adatai: </h3>
+                <div class="form-group">
+                    <label for="name-input">Név: </label>
+                    <input type="text" name="name-input" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="postcode-input">Irányítószám: </label>
+                    <input type="number" name="postcode-input" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="city-input">Település: </label>
+                    <input type="text" name="city-input" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="street-input">Utca:</label>
+                    <input type="text" name="street-input" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="house-number-input">Házszám: </label>
+                    <input type="number" name="house-number-input" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="level-input">Emelet/lépcsőház/ajtó: </label>
+                    <input type="text" name="level-input" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="email-input">E-mail cím: </label>
+                    <input type="email" name="email-input" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone-input">Telefonszám: </label>
+                    <input type="number" name="phone-input" class="form-control" required>
+                </div>
+            </form>
+            <form action=""></form>
+            <h3>Megrendelés adatai: </h3>
+            <h4>Pizza fajtája: </h4>
+            <div class="form-group">
+                <div>
+                    <input id="Don-Corleone" name="Don-Corleone" type="checkbox" value=1250>
+                    <label for="Don-Corleone">Don Corleone</label>
+                </div>
+                <div>
+                    <input id="Margaréta" name="Margaréta" type="checkbox" value=1000>
+                    <label for="Margaréta">Margaréta</label>
+                </div>
+                <div>
+                    <input id="Szalámis" name="Szalámis" type="checkbox" value=1600>
+                    <label for="Szalámis">Szalámis</label>
+                </div>
+                <div>
+                    <input id="Húsimádó" name="Húsimádó" type="checkbox" value=2100>
+                    <label for="Húsimádó">Húsimádó</label>
+                </div>
+                <h4>Extra feltét: </h4>
+                <div>
+                    <input id="Cheese" name="Cheese" type="radio" value=700>
+                    <label for="Cheese">Sajtos</label>
+                </div>
+                <div>
+                    <input id="Dubble-meat" name="Dubble-meat" type="radio" value=800>
+                    <label for="Dubble-meat">Dupla húsos</label>
+                </div>
+                <div>
+                    <input id="Dubble-cheese" name="Dubble-cheese" type="radio" value=800>
+                    <label for="Dubble-cheese">Dupla sajtos</label>
+                </div>
+            </div>
+            </form>
+            <button onClick=amount() class="btn btn-primary">Megrendelés</button>
+        </div>
+    </div>
+    <script src="/js/main4.js"></script>
+</body>
+
+</html>
