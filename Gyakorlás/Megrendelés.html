@@ -47,7 +47,7 @@
                 </div>
                 <div class="form-group">
                     <label for="phone-input">Telefonszám: </label>
-                    <input type="number" name="phone-input" class="form-control" required>
+                    <input type="number" name="phone-input" class="form-control" require>
                 </div>
             </form>
             <form action=""></form>
@@ -84,8 +84,12 @@
                     <label for="Dubble-cheese">Dupla sajtos</label>
                 </div>
             </div>
+            <div class="form-group">
+                <label for="quantity-input"><h3>Mennyiség:</h3></label>
+                <input type="number" name="quantity-input" class="form-control" value=1>
+            </div>
             </form>
-            <button onClick=amount() class="btn btn-primary">Megrendelés</button>
+            <button onClick="allIn()" class="btn btn-primary">Megrendelés</button>
         </div>
     </div>
     <script src="/js/main4.js"></script>

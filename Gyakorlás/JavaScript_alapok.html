@@ -148,6 +148,7 @@
                     <li>== egyenlő</li>
                     <li>=== egyenlő és azonos típus</li>
                     <li>&& és</li>
+                    <li>! tagadás</li>
                     <li>!= nem egyenlő</li>
                     <li>!== nem egye1nlő és nem azonos típus</li>
                     <li>>= kisebb vagy egyenlő</li>
@@ -155,6 +156,43 @@
                     <li>|| vagy</li>
                 </ul>
             </p>
+
+            <h3>Tömbök</h3>
+            let typeOfHug =['nagy', 'óriási', 'meganagy', 'giganagy', 'megagiganagy"]
+
+            Első index mindig nulla.
+            typeOfHug[0] --> nagy
+
+            Lehet tömböt egymásba ágyazni --> többdimenziós tömb
+
+            let alma = [['idared', 'golden'], ['jonatán,'granny smith'], ['pink lady','kukacos']]
+            alma[1][0] -->jonatán
+
+            dinamikusak --> nem kell megadni a hosszát, változtatható
+            mixed --> lehet vegyes típusú
+
+            Array.isArray(alma) --> true
+            <h3>Tömbök metódusai</h3>
+            
+            let cars = ['Volvo', 'Mazda', "Kia"];
+            cars.push("Opel") --> hozzáad egy elemet - gyors
+
+            cars.pop(); -gyors
+            "Opel" -->kiveszi az utolsó elemet let valami.cars.pop() -->
+
+            cars.unshift("Suzuki"); -->első elem elé adja hozzá - lassú
+            cars.shift(); --> kiveszi az első elemet -lassú
+
+            cars.slice(0,1); --> nem az eredeti tömböt módosítja, hanem egy újat ad hozzá (start ha 0, előről, ha mínusz, hátulról kezdi,end-ig vágja, de end már nincs benne)
+            cars.splice(1,1); --> az eredeti tömböt módosítja
+            cars.splice(1,0,"Audi"); --> hozzáad az egyes helyre hozzáadta az Audit
+
+            cars.join(" ,"); --> új string, tömb elemeit egymás után teszi és a separatort közésjük teszi
+
+
+
+
+
             <h5>Hasznos oldalak</h5>
             <ul class="nav flex-column">
                 <li class="nav-item mb-2"><a href="https://www.w3schools.com/"
